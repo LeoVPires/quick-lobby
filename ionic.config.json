@@ -1,0 +1,7 @@
+{
+  "name": "quick-lobby",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
