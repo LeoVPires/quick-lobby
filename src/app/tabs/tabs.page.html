@@ -1,0 +1,34 @@
+<ion-tabs (ionTabsDidChange)="setCurrentTab($event)">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="notes" href="tabs/notes">
+      <ion-icon
+        [name]="selectedTab === 'notes' ? 'document-text' : 'document-text-outline'"
+      ></ion-icon>
+      <ion-label>Notas</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="todo" href="tabs/todo">
+      <ion-icon
+        [name]="selectedTab === 'todo' ? 'clipboard' : 'clipboard-outline'"
+      ></ion-icon>
+      <ion-label>Afazeres</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="home" href="tabs/home">
+      <ion-icon
+        [name]="selectedTab === 'home' ? 'home' : 'home-outline'"
+      ></ion-icon>
+      <ion-label>Lobby</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="schedule" href="tabs/schedule">
+      <ion-icon
+        [name]="selectedTab === 'schedule' ? 'calendar-number' : 'calendar-number-outline'"
+      ></ion-icon>
+      <ion-label>Agenda</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="weather" href="tabs/weather">
+      <ion-icon
+        [name]="selectedTab === 'weather' ? 'rainy' : 'rainy-outline'"
+      ></ion-icon>
+      <ion-label>Clima</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
